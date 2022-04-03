@@ -28,7 +28,7 @@ export class CreateUserService implements CreateUserUseCase {
     })
 
     await this.addressRepository.create({
-      idUser: user.id,
+      user,
       address: address.address,
       addressNumber: address.addressNumber,
       complement: address.complement,
